@@ -9,7 +9,7 @@ namespace CorePrograms
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter your Choice Number to Execute the Program Press- 1-CoinFlip, 2-Exit");
+                Console.WriteLine("Enter your Choice Number to Execute the Program Press- 1-CoinFlip,2-LeapYear,3-Exit");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -18,6 +18,10 @@ namespace CorePrograms
                         core.CoinFlip();
                         break;
                     case 2:
+                        LeapYear leap = new LeapYear();
+                        leap.CheckLeapYear();
+                        break;
+                    case 3:
                         flag = false;
                         break;
                 }
