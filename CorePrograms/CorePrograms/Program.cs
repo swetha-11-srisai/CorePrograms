@@ -9,7 +9,7 @@ namespace CorePrograms
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter your Choice Number to Execute the Program Press- 1-CoinFlip,2-LeapYear,3-Poweroftwo,4-HormonicNumber,5-EvenOdd,6-VowelConstant,7-LargestofThree,8-Exit");
+                Console.WriteLine("Enter your Choice Number to Execute the Program Press- 1-CoinFlip,2-LeapYear,3-Poweroftwo,4-HormonicNumber,5-EvenOdd,6-VowelConstant,7-LargestofThree,8-Quotient9-Exit");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -39,8 +39,12 @@ namespace CorePrograms
                         LargestOfThree large = new LargestOfThree();
                         large.CheckThreeNumbers();
                         break;
-
                     case 8:
+                        Quotient quo = new Quotient();
+                        quo.CheckRemainder();
+                        break;
+
+                    case 9:
                         flag = false;
                         break;
                 }
