@@ -9,7 +9,7 @@ namespace CorePrograms
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter your Choice Number to Execute the Program Press- 1-CoinFlip,2-LeapYear,3-Exit");
+                Console.WriteLine("Enter your Choice Number to Execute the Program Press- 1-CoinFlip,2-LeapYear,3-Poweroftwo,4-Exit");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -22,6 +22,11 @@ namespace CorePrograms
                         leap.CheckLeapYear();
                         break;
                     case 3:
+                        PowerOfTwo powertwo = new PowerOfTwo();
+                        powertwo.Calculate();
+                        break;
+
+                    case 4:
                         flag = false;
                         break;
                 }
