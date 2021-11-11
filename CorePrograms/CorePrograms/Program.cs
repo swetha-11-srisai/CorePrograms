@@ -35,8 +35,12 @@ namespace CorePrograms
                         VowelConstant vowel = new VowelConstant();
                         vowel.CheckVowel();
                         break;
-
                     case 7:
+                        LargestOfThree large = new LargestOfThree();
+                        large.CheckThreeNumbers();
+                        break;
+
+                    case 8:
                         flag = false;
                         break;
                 }
