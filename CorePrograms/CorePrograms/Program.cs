@@ -9,7 +9,7 @@ namespace CorePrograms
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter your Choice Number to Execute the Program Press- 1-CoinFlip,2-LeapYear,3-Poweroftwo,4-Exit");
+                Console.WriteLine("Enter your Choice Number to Execute the Program Press- 1-CoinFlip,2-LeapYear,3-Poweroftwo,4-HormonicNumber,5-Exit");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -25,8 +25,12 @@ namespace CorePrograms
                         PowerOfTwo powertwo = new PowerOfTwo();
                         powertwo.Calculate();
                         break;
-
                     case 4:
+                        HarmonicNumber hormonic = new HarmonicNumber();
+                        hormonic.FindNumber();
+                        break;
+
+                    case 5:
                         flag = false;
                         break;
                 }
