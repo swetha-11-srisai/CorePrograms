@@ -9,7 +9,7 @@ namespace CorePrograms
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter your Choice Number to Execute the Program Press- 1-CoinFlip,2-LeapYear,3-Poweroftwo,4-HormonicNumber,5-Exit");
+                Console.WriteLine("Enter your Choice Number to Execute the Program Press- 1-CoinFlip,2-LeapYear,3-Poweroftwo,4-HormonicNumber,5-EvenOdd,6-Exit");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -29,8 +29,12 @@ namespace CorePrograms
                         HarmonicNumber hormonic = new HarmonicNumber();
                         hormonic.FindNumber();
                         break;
-
                     case 5:
+                        EvenOdd even = new EvenOdd();
+                        even.EvenOddCheck();
+                        break;
+
+                    case 6:
                         flag = false;
                         break;
                 }
